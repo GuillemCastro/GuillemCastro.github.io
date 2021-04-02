@@ -1,0 +1,68 @@
+.darkyellow {
+    background-color: #282828;
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-right: 1em;
+}
+
+nav .social {
+    text-align: right;
+}
+
+h1 span {
+    border-bottom: 5px solid #ffc000;
+    padding-bottom: 1px;
+}
+
+a {
+    border-bottom: 1px solid #ffc000;
+    padding-bottom: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 5px solid #ffc000;
+    padding-bottom: 1px;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+hr.divider {
+    border: 1px dashed #ffc000;
+}
+
+.content {
+    min-height: 400px;
+}
+
+.post-header h1 {
+    margin-top: 0.1em;
+}
+
+.post-date {
+    color: lightgrey;
+    font-size: .9em;
+}
