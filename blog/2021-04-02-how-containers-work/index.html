@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        
+        <title>What is actually a container? - Guillem Castro</title>
+        
+        <link rel="stylesheet" href="/css/site.css" />
+        <link rel="stylesheet" href="/css/simple-grid.css" />
+    </head>
+
+    <body class="darkyellow">
+        <div class="container">
+            <header>
+                <nav>
+                    <div>
+                        <a href="/">Home</a>
+                        <a href="/blog">Blog</a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/GuillemCastro"><img src="/static/github.svg" alt="GitHub Link" width="20" height="20"></a>
+                        <a href="https://twitter.com/guillemcastr0"><img src="/static/twitter.svg" alt="GitHub Link" width="20" height="20"></a>
+                        <a href="https://linkedin.com/in/guillem-castro-olivares"><img src="/static/linkedin.svg" alt="GitHub Link" width="20" height="20"></a>
+                    </div>
+                </nav>
+                <hr class="divider"/>
+            </header>
+            <div class="content">
+
+
+<div class="post-header">
+    <span class="post-date">2021-04-02</span>
+    <h1><span>What is actually a container?</span></h1>
+</div>
+
+<div class="post-body">
+    <p>For me, one of the most interesting technologies used by developers are containers. They're so popular that all programmers have used it, or at least heard about them. Yet, most people don't really know what they are, or how they work. We all have probably heard a definition similar to this one, — this one was given to me by one of my professors at university, but it's also <a href="https://cloud.google.com/containers">the definition Google gives to us</a>—</p>
+<blockquote>
+<p>They are kind of like a more light-weight virtual machine</p>
+</blockquote>
+<p>While not completely false, this is a very deceiving definition. Not only there use different technologies, but both (VMs and containers) also solve different problems —different solutions for different problems—, and behave completely differently. It's not a coincidence that containers seem hard to use at first, &quot;Why the container is killed when I press Ctrl+C? That doesn't happen with my VMs!&quot;.</p>
+<p>So, what is a container? A container is simply <strong>a process</strong> that we execute in an isolated environment. For creating an isolated environment we need two things,</p>
+<ul>
+<li>
+<p>A root filesystem (rootfs), often called &quot;images&quot;. Think of it as an operating system minus the kernel, anything else you'd find on a regular Linux machine is included (bash, libc, etc.). As for desktop/server installations they also come in distributions, so you can find rootfs for Ubuntu, CentOS, Alpine, etc.</p>
+</li>
+<li>
+<p>A way to trick the process into thinking that it is alone in the machine. The process won't be able to interact with other processes, and won't be able to access your files.</p>
+</li>
+</ul>
+<p>A virtual machine is also an isolated environment that executes one process, there are some differences though,</p>
+<ul>
+<li>
+<p>The isolation is achieved by means of virtualization. Everything from the CPU to the memory or the external devices is virtualized.</p>
+</li>
+<li>
+<p>In a VM the process that gets executed is almost always an operating system or a special program that can be booted by a bootloader.</p>
+</li>
+</ul>
+
+</div>
+
+</div>
+<hr class="divider"/>
+
+        <footer>
+            <blockquote>Copyright © 2021 Guillem Castro. All opinions are my own.</blockquote>
+            <blockquote>The contents of this website are licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license</a>.</blockquote>
+        </footer>
+    </div>
+    <script data-goatcounter="https://castrog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    </body>
+</html>
