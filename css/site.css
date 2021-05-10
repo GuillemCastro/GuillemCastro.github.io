@@ -71,3 +71,31 @@ hr.divider {
     border-left: 5px solid #ffc000;
     padding-left: 0.5em;
 }
+
+h2::before {
+    content: "## ";
+    color: #ffc000;
+}
+
+h3::before {
+    content: "### ";
+    color: #ffc000;
+}
+
+h4::before {
+    content: "#### ";
+    color: #ffc000;
+}
+
+.home ul {
+    list-style-position: inside;
+    padding-left: 0;
+    list-style: none;
+}
+
+.home li:before { 
+    content: '* ';
+    color: #ffc000;
+    font-size: 1.4rem;
+    vertical-align: middle;
+} 
